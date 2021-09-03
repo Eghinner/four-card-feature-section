@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition-duration: 0.5s;
+    font-size: 15px;
+    color: hsl(234, 12%, 34%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+	margin: auto;
+}
+
+.superior {
+	text-align: center;
+}
+
+.superior #one {
+    font-weight: 200;
+    font-size: 26px;
+}
+
+.superior #two {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.superior #tree {
+	margin: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(229, 6%, 66%);
+    width: 500px;
+    text-align: center;
+
+}
+
+.boxes {
+	margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes div[class^=box] {
+    cursor: pointer;
+    padding: 20px;
+    width: 250px;
+    height: 190px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 15px hsl(229, 6%, 66%);
+    display: flex;
+    flex-direction: column;
+    color: hsl(229, 6%, 66%);
+}
+
+.boxes div[class^=box]:hover {
+    transform: scale(1.1);
+}
+
+.boxes div[class^=box] h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.boxes div[class^=box] img {
+    position: relative;
+    top: 45px;
+    width: 50px;
+    height: auto;
+    justify-self: end;
+    align-self: end;
+}
+
+.boxes .box1 {
+    border-top: solid 5px hsl(180, 62%, 55%);
+    position: relative;
+    top: 100px;
+}
+
+.boxes .box2 {
+    border-top: solid 5px hsl(0, 78%, 62%);
+}
+
+.boxes .box3 {
+    border-top: solid 5px hsl(34, 97%, 64%);
+}
+
+.boxes .box4 {
+    border-top: solid 5px hsl(212, 86%, 64%);
+    position: relative;
+    top: 100px;
+}
+
+@media(max-width: 375px) {
+
+    .content {
+        width: 85%
+    }
+
+    .superior #tree {
+        width: auto
+    }
+
+	.boxes {
+		margin: 50px auto;
+        display: block;
+	}
+
+	.boxes .box1 {
+		position: static;
+		top: auto;
+	}
+
+	.boxes .box4 {
+		top: auto;
+		position: static;
+	}
+}
